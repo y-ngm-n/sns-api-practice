@@ -16,3 +16,8 @@ spring:
 
     hibernate:
       ddl-auto: create
+
+oauth:
+  twitter:
+    client-id: ${X_CLIENT_ID}
+    client-secret: ${X_CLIENT_SECRET}
