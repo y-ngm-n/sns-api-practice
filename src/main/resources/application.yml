@@ -21,3 +21,4 @@ oauth:
   twitter:
     client-id: ${X_CLIENT_ID}
     client-secret: ${X_CLIENT_SECRET}
+    access-token: ${X_ACCESS_TOKEN}
