@@ -15,10 +15,10 @@ spring:
       hibernate.dialect: org.hibernate.dialect.MySQLDialect
 
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
 
 oauth:
   twitter:
     client-id: ${X_CLIENT_ID}
     client-secret: ${X_CLIENT_SECRET}
-    access-token: ${X_ACCESS_TOKEN}
+    challenge: ${X_CODE_CHALLENGE}

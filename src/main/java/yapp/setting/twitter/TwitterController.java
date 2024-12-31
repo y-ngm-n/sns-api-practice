@@ -5,6 +5,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import twitter4j.TwitterException;
 
 import java.net.URI;
 
@@ -34,8 +35,18 @@ public class TwitterController {
         System.out.println(accessToken);
     }
 
+//    @GetMapping("/refresh")
+//    public void refreshTwitterToken() {
+//        twitterService.refreshTwitterToken();
+//    }
+
     @PostMapping("/tweets")
     public Long createTweet(@RequestBody String content) throws Exception {
         return twitterService.createTweet(content);
+    }
+
+    @GetMapping("/users")
+    public String getUser() throws TwitterException {
+        return twitterService.getUser();
     }
 }
