@@ -1,4 +1,4 @@
-package yapp.setting.twitter;
+package yapp.setting.api.twitter;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
@@ -34,11 +34,6 @@ public class TwitterController {
         String accessToken = twitterService.getTwitterAuthorizationToken(code);
         System.out.println(accessToken);
     }
-
-//    @GetMapping("/refresh")
-//    public void refreshTwitterToken() {
-//        twitterService.refreshTwitterToken();
-//    }
 
     @PostMapping("/tweets")
     public Long createTweet(@RequestBody String content) throws Exception {

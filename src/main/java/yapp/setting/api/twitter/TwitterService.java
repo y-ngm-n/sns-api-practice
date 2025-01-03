@@ -1,4 +1,4 @@
-package yapp.setting.twitter;
+package yapp.setting.api.twitter;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,7 +9,7 @@ import twitter4j.auth.OAuth2Authorization;
 import twitter4j.auth.OAuth2Token;
 import twitter4j.conf.Configuration;
 import twitter4j.conf.ConfigurationBuilder;
-import yapp.setting.exception.NotFoundException;
+import yapp.setting.common.exception.NotFoundException;
 
 @Service
 @RequiredArgsConstructor

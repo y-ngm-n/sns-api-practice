@@ -22,3 +22,8 @@ oauth:
     client-id: ${X_CLIENT_ID}
     client-secret: ${X_CLIENT_SECRET}
     challenge: ${X_CODE_CHALLENGE}
+
+openai:
+  model: gpt-4o-mini
+  api-key: ${OPENAI_API_KEY}
+  api-url: https://api.openai.com/v1/chat/completions
