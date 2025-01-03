@@ -19,6 +19,7 @@ public class OpenAiConfig {
         return RestClient.builder()
             .baseUrl(url)
             .defaultHeader("Authorization", "Bearer " + key)
+            .defaultHeader("Content-Type", "application/json")
             .build();
     }
 }

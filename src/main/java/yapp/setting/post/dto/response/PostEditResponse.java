@@ -1,15 +1,17 @@
-package yapp.setting.api.openai.dto;
+package yapp.setting.post.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import yapp.setting.post.dto.PostList;
+
+import java.util.List;
 
 @Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class OpenAiMessage {
+public class PostEditResponse {
 
-    private String role;
-    private String content;
+    private List<PostList> posts;
 }
