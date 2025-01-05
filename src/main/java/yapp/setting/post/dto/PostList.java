@@ -10,6 +10,6 @@ import lombok.Setter;
 @AllArgsConstructor
 public class PostList {
 
-    private Long id;
+    private Integer id;
     private String content;
 }
