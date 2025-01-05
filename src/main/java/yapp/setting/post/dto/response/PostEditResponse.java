@@ -14,18 +14,11 @@ import java.util.List;
 @AllArgsConstructor
 public class PostEditResponse {
 
-    // private List<PostList> posts;
     private String content;
 
     public static PostEditResponse from(ChatCompletionResponse chatCompletionResponse) {
         PostEditResponse response = new PostEditResponse();
         response.setContent(chatCompletionResponse.getChoices().get(0).getMessage().getContent());
-        return response;
-    }
-
-    public static PostEditResponse of(String content) {
-        PostEditResponse response = new PostEditResponse();
-        response.setContent(content);
         return response;
     }
 }

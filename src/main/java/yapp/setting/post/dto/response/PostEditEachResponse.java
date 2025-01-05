@@ -17,13 +17,6 @@ public class PostEditEachResponse {
 
      private List<PostList> posts = new ArrayList<>();
 
-    public static PostEditEachResponse from(ChatCompletionResponse chatCompletionResponse) {
-        PostEditEachResponse response = new PostEditEachResponse();
-        PostList post = new PostList(1, chatCompletionResponse.getChoices().get(0).getMessage().getContent());
-        response.getPosts().add(post);
-        return response;
-    }
-
     public static PostEditEachResponse from(List<ChatCompletionResponse> answers) {
         PostEditEachResponse response = new PostEditEachResponse();
         for (ChatCompletionResponse answer : answers) {
