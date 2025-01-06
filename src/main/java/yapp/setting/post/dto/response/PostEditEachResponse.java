@@ -15,7 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 public class PostEditEachResponse {
 
-     private List<PostList> posts = new ArrayList<>();
+    private List<PostList> posts = new ArrayList<>();
 
     public static PostEditEachResponse from(List<ChatCompletionResponse> answers) {
         PostEditEachResponse response = new PostEditEachResponse();

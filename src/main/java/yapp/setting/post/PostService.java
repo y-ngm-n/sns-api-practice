@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import yapp.setting.api.openai.OpenAiService;
 import yapp.setting.api.openai.dto.request.ChatCompletionRequest;
 import yapp.setting.api.openai.dto.response.ChatCompletionResponse;
+import yapp.setting.api.rss.RssService;
 import yapp.setting.post.dto.request.PostCreateRequest;
 import yapp.setting.post.dto.request.PostEditRequest;
 import yapp.setting.post.dto.response.PostCreateResponse;
